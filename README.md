@@ -26,7 +26,6 @@ Because I'm not a Python developer. Can you get it there? As mentioned in [this]
 ## TODO
 
 - Refactor? I'm not sure everything I did is correct, but it works.
-- Make sure the data is updated on load. Now you've to wait for 1 minute until you see data. And yes, that's the update interval.
 - Add it to the Home Assistant core.
 
 ## Ideas, bugs or suggestions?

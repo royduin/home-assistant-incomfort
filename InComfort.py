@@ -40,6 +40,7 @@ class InComfortThermostat(ClimateDevice):
         self._target_temperature = None
         self._state = None
         self.data = None
+        self.update()
 
     @property
     def state(self):
