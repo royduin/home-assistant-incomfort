@@ -5,6 +5,9 @@ Intergas InComfort integration with Home Assistant.
 - Feature request: https://community.home-assistant.io/t/intergas-incomfort-lan2rf-gateway/23967
 - Development talk: https://community.home-assistant.io/t/new-climate-thermostat-implementation-tips/74394
 
+<img src="https://raw.githubusercontent.com/royduin/home-assistant-incomfort/master/card.png" width="250px" alt="Card">
+<img src="https://raw.githubusercontent.com/royduin/home-assistant-incomfort/master/popup.png" width="250px" alt="Popup">
+
 ## Installation
 
 Put the `InComfort.py` file in `custom_components/climate` within your configuration directory. On Ubuntu for example: `~/.homeassistant/custom_components/climate`. After that configure it in the `configuration.yaml` file:
