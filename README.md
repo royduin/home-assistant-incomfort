@@ -23,6 +23,12 @@ And change the `name` and `host` as wanted.
 
 Because I'm not a Python developer. Can you get it there? As mentioned in [this](https://community.home-assistant.io/t/new-climate-thermostat-implementation-tips/74394) topic it should probably splitted into a seperated library where this integration talks with.
 
+## TODO
+
+- Refactor? I'm not sure everything I did is correct, but it works.
+- Make sure the data is updated on load. Now you've to wait for 1 minute until you see data. And yes, that's the update interval.
+- Add it to the Home Assistant core.
+
 ## Ideas, bugs or suggestions?
 Please create a [issue](https://github.com/royduin/home-assistant-incomfort/issues) or a [pull request](https://github.com/royduin/home-assistant-incomfort/pulls).
 
