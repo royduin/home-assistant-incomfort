@@ -82,7 +82,7 @@ class InComfortThermostat(ClimateDevice):
     def target_temperature(self):
         """Return the temperature we try to reach."""
         if self.data is not None:
-            self._target_temperature = _lsbmsb(self.data['room_set_ovr_1_lsb'], self.data['room_set_ovr_1_msb'])
+            self._target_temperature = _lsbmsb(self.data['room_temp_set_1_lsb'], self.data['room_temp_set_1_msb'])
         else:
             self._target_temperature = None
         return self._target_temperature
