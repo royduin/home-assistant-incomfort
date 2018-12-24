@@ -19,7 +19,11 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
 })
 
 def _lsbmsb(lsb, msb):
-    return (lsb + msb*256) / 100.0
+    temp = (lsb + msb*256) / 100.0;
+    if temp == 327.67:
+        return 0
+    else:
+        return temp
 
 def setup_platform(hass, config, add_devices, discovery_info=None):
     """Set up the InComfort thermostat."""
