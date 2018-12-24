@@ -19,7 +19,7 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
 })
 
 def _lsbmsb(lsb, msb):
-    temp = (lsb + msb*256) / 100.0;
+    temp = (lsb + msb*256) / 100.0
     if temp == 327.67:
         return 0
     else:
