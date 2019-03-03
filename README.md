@@ -15,9 +15,22 @@ Put the `InComfort.py` file in `custom_components/climate` within your configura
 climate:
   - platform: InComfort
     name: Woonkamer
-    host: 192.168.1.139
+    host: 192.168.1.123
 ```
 And change the `name` and `host` as wanted.
+
+## Show more information
+
+If you'd like to show more information, like the pressure you can use the rest sensor for that. Put this in your `configuration.yaml` [As I did in my configuration](https://github.com/royduin/home-assistant-config/commit/2a30651baa60c35b3bab4798830855f99b3da811):
+
+```
+sensor:
+  - platform: rest
+    resource: http://192.168.1.123/data.json?heater=0
+    name: Central Heating Pressure
+    device_class: pressure
+    value_template: '{{ (value_json.ch_pressure_lsb + value_json.ch_pressure_msb * 256) / 100 }}'
+```
 
 ## Why is it not in the core of Home Assistant?
 
