@@ -29,6 +29,7 @@ sensor:
     resource: http://192.168.1.123/data.json?heater=0
     name: Central Heating Pressure
     device_class: pressure
+    unit_of_measurement: Bar
     value_template: '{{ (value_json.ch_pressure_lsb + value_json.ch_pressure_msb * 256) / 100 }}'
 ```
 
