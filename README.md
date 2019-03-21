@@ -7,9 +7,6 @@ Intergas InComfort integration with Home Assistant.
 <img src="https://raw.githubusercontent.com/royduin/home-assistant-incomfort/master/card.png" width="250px" alt="Card">
 <img src="https://raw.githubusercontent.com/royduin/home-assistant-incomfort/master/popup.png" width="250px" alt="Popup">
 
-## Update
-Add pressure, ch_temp, tap_temp and rf_message_rssi as device_state_attributes. And update to new custom_components structure of HA.
-
 ## Installation
 Put the `climate.py` file in `custom_components/InComfort` within your configuration directory. On Ubuntu for example: `~/.homeassistant/custom_components/InComfort`. After that configure it in the `configuration.yaml` file:
 ```

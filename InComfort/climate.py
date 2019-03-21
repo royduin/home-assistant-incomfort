@@ -65,34 +65,10 @@ class InComfortThermostat(ClimateDevice):
     def state(self):
         """Return the current state."""
         if self.data is not None:
-            if self.data['displ_code'] == 0:
-                self._state = 'Opentherm'
-            elif self.data['displ_code'] == 15:
-                self._state = 'Boiler External'
-            elif self.data['displ_code'] == 24:
-                self._state = 'Frost'
-            elif self.data['displ_code'] == 37:
-                self._state = 'Central Heating RF'
-            elif self.data['displ_code'] == 51:
-                self._state = 'Tapwater Internal'
-            elif self.data['displ_code'] == 85:
-                self._state = 'Sensortest'
-            elif self.data['displ_code'] == 102:
-                self._state = 'Zone-heating'
-            elif self.data['displ_code'] == 126:
+            if bool(self.data['IO'] & 8):
+                self._state = 'Verwarmen'
+            else:
                 self._state = 'Standby'
-            elif self.data['displ_code'] == 153:
-                self._state = 'Postrun Boiler'
-            elif self.data['displ_code'] == 170:
-                self._state = 'Service'
-            elif self.data['displ_code'] == 204:
-                self._state = 'Tapwater'
-            elif self.data['displ_code'] == 231:
-                self._state = 'Postrun Central Heating'
-            elif self.data['displ_code'] == 240:
-                self._state = 'Boiler Internal'
-            elif self.data['displ_code'] == 255:
-                self._state = 'Buffer'
         else:
             self._state = None
         return self._state
