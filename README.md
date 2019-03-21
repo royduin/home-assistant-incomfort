@@ -33,7 +33,7 @@ Sample:
       friendly_name: "Water Pressure"
       unit_of_measurement: 'bar'
       icon_template: mdi:gauge
-      value_template: "{{ state_attr('climate.verwarming', 'pressure') }}"
+      value_template: "{{ state_attr('climate.Woonkamer', 'pressure') }}"
 ```
 
 ## Why is it not in the core of Home Assistant?
