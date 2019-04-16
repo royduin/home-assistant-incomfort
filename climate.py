@@ -20,21 +20,21 @@ ATTR_CH_TEMP = 'ch_temp'
 ATTR_TAP_TEMP = 'tap_temp'
 
 DEFAULT_AUTH = False
-DEFAULT_USER = 'admin'
-DEFAULT_PASS = 'intergas'
+DEFAULT_USERNAME = 'admin'
+DEFAULT_PASSWORD = 'intergas'
 
 CONF_NAME = 'name'
 CONF_HOST = 'host'
 CONF_AUTH = 'auth'
-CONF_USER = 'username'
-CONF_PASS = 'password'
+CONF_USERNAME = 'username'
+CONF_PASSWORD = 'password'
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Required(CONF_HOST): cv.string,
     vol.Required(CONF_NAME): cv.string,
     vol.Optional(CONF_AUTH, default=DEFAULT_AUTH): cv.boolean,
-    vol.Optional(CONF_USER, default=DEFAULT_USER): cv.string,
-    vol.Optional(CONF_PASS, default=DEFAULT_PASS): cv.string,
+    vol.Optional(CONF_USERNAME, default=DEFAULT_USERNAME): cv.string,
+    vol.Optional(CONF_PASSWORD, default=DEFAULT_PASSWORD): cv.string,
 })
 
 
@@ -52,8 +52,8 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
     name = config.get(CONF_NAME)
     host = config.get(CONF_HOST)
     auth = config.get(CONF_AUTH)
-    username = config.get(CONF_USER)
-    password = config.get(CONF_PASS)
+    username = config.get(CONF_USERNAME)
+    password = config.get(CONF_PASSWORD)
 
     add_devices([InComfortThermostat(name, host, auth, username, password)])
 

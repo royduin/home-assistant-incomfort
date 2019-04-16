@@ -22,8 +22,8 @@ climate:
     name: Woonkamer
     host: 192.168.1.123
     auth: true
-    user: admin
-    pass: intergas
+    username: admin
+    password: intergas
 ```
 
 ## Add sensor(s) for the UI
