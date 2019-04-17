@@ -15,7 +15,16 @@ climate:
     name: Woonkamer
     host: 192.168.1.123
 ```
-And change the `name` and `host` as needed.
+And change the `name` and `host` as needed. Some newer firmwares require authentication, this can be configured by adding `auth: true`. If the username and password are anything other than `admin` and `intergas` you can specify them like:
+```
+climate:
+  - platform: InComfort
+    name: Woonkamer
+    host: 192.168.1.123
+    auth: true
+    username: admin
+    password: intergas
+```
 
 ## Add sensor(s) for the UI
 Sample:
