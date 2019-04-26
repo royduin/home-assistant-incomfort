@@ -33,6 +33,16 @@ climate:
     password: intergas
 ```
 
+## GIT Submodule
+If your configuration is in GIT it's possible to add this component as submodule with:
+```
+git submodule add git@github.com:royduin/home-assistant-incomfort.git custom_components/InComfort/
+```
+And update with:
+```
+git submodule foreach git pull origin master
+```
+
 ## Add sensor(s) for the UI
 Sample:
 ```
