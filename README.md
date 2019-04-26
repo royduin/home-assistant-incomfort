@@ -12,6 +12,7 @@ Put these files:
 - `climate.py`
 - `__init__.py`
 - `manifest.json`
+
 In `custom_components/InComfort` within your configuration directory. On Ubuntu for example: `~/.homeassistant/custom_components/InComfort`. After that configure it in the `configuration.yaml` file:
 ```
 climate:
