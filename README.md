@@ -8,14 +8,21 @@ Intergas InComfort integration with Home Assistant.
 <img src="https://raw.githubusercontent.com/royduin/home-assistant-incomfort/master/popup.png" width="250px" alt="Popup">
 
 ## Installation
-Put the `climate.py` file in `custom_components/InComfort` within your configuration directory. On Ubuntu for example: `~/.homeassistant/custom_components/InComfort`. After that configure it in the `configuration.yaml` file:
+Put these files:
+- `climate.py`
+- `__init__.py`
+- `manifest.json`
+In `custom_components/InComfort` within your configuration directory. On Ubuntu for example: `~/.homeassistant/custom_components/InComfort`. After that configure it in the `configuration.yaml` file:
 ```
 climate:
   - platform: InComfort
     name: Woonkamer
     host: 192.168.1.123
 ```
-And change the `name` and `host` as needed. Some newer firmwares require authentication, this can be configured by adding `auth: true`. If the username and password are anything other than `admin` and `intergas` you can specify them like:
+And change the `name` and `host` as needed.
+
+## Authentication
+Some newer firmwares require authentication, this can be configured by adding `auth: true`. If the username and password are anything other than `admin` and `intergas` you can specify them like:
 ```
 climate:
   - platform: InComfort

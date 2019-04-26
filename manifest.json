@@ -1,0 +1,8 @@
+{
+  "domain": "InComfort",
+  "name": "InComfort",
+  "documentation": "https://github.com/royduin/home-assistant-incomfort",
+  "dependencies": [],
+  "codeowners": [],
+  "requirements": []
+}
