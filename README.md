@@ -22,7 +22,7 @@ climate:
 ```
 And change the `name` and `host` as needed.
 
-## Authentication
+### Authentication
 Some newer firmwares require authentication, this can be configured by adding `auth: true`. If the username and password are anything other than `admin` and `intergas` you can specify them like:
 ```
 climate:
@@ -34,7 +34,7 @@ climate:
     password: intergas
 ```
 
-## GIT Submodule
+### GIT Submodule
 If your configuration is in GIT it's possible to add this component as submodule with:
 ```
 git submodule add git@github.com:royduin/home-assistant-incomfort.git custom_components/InComfort/
