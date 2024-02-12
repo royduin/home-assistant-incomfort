@@ -1,4 +1,9 @@
 # Home Assistant InComfort
+
+> Home Assistant now does have built in support for InComfort! You should use that!
+
+---
+
 Intergas InComfort integration with Home Assistant.
 
 - Feature request: https://community.home-assistant.io/t/intergas-incomfort-lan2rf-gateway/23967
